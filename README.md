@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gaming Website Project
+
+A modern, responsive gaming website built with Next.js that showcases various video games with detailed information, ratings, and categorization.
+
+## Features
+
+- 🎮 Extensive game catalog with detailed information
+- 🔍 Browse games by categories
+- ⭐ Rating system for games
+- 📱 Fully responsive design
+- 🎯 Interactive UI with hover effects
+- 🖼️ Beautiful game imagery showcase
+- 📄 Detailed game pages with specifications
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [Tailwind CSS](https://tailwindcss.com/) - For styling and responsive design
+- [React Icons](https://react-icons.github.io/react-icons/) - For beautiful icons
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have Node.js installed on your system.
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repository-url]
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd gaming-website-project-task
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+### Running the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css    # Global styles
+│   ├── layout.tsx     # Root layout component
+│   ├── page.tsx       # Home page
+│   ├── data/
+│   │   └── games.ts   # Games data
+│   └── games/
+│       ├── page.tsx           # Games listing page
+│       └── [...slug]/
+│           └── page.tsx       # Individual game page
+```
 
-## Learn More
+## Key Features Implementation
 
-To learn more about Next.js, take a look at the following resources:
+- **Game Catalog**: Browse through a collection of games with grid layout
+- **Interactive UI**: Hover effects and smooth transitions for better user experience
+- **Game Details**: Detailed view for each game including:
+  - Rating
+  - Release Date
+  - Developer Information
+  - Game Description
+  - Game Categories
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
